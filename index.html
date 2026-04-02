@@ -2,42 +2,103 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>hyperhug GAMES STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПВО СИМУЛЯТОР — ОФИЦИАЛЬНЫЙ САЙТ</title>
     <style>
-        body { margin: 0; background: #0d1117; color: white; font-family: sans-serif; text-align: center; }
-        header { padding: 50px; }
-        h1 { color: #58a6ff; font-size: 3rem; text-shadow: 0 0 20px #58a6ff; }
-        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-        .card { background: #161b22; border: 1px solid #30363d; border-radius: 15px; width: 300px; padding: 20px; transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); border-color: #58a6ff; }
-        .btn { display: inline-block; margin-top: 15px; padding: 10px 25px; background: #238636; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        body {
+            margin: 0;
+            background: #050505;
+            color: white;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-box {
+            background: rgba(20, 20, 20, 0.95);
+            border: 2px solid #ff3300;
+            padding: 50px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 0 40px rgba(255, 51, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #ff3300;
+            text-shadow: 0 0 20px #ff3300;
+            margin: 0 0 10px 0;
+            letter-spacing: 3px;
+        }
+
+        .status {
+            color: #00ff00;
+            margin-bottom: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: #ccc;
+        }
+
+        .launch-btn {
+            display: inline-block;
+            padding: 20px 50px;
+            background: #ff3300;
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-radius: 3px;
+            transition: 0.2s;
+            box-shadow: 0 5px 0 #992200;
+        }
+
+        .launch-btn:hover {
+            background: #ff4411;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 0 #992200;
+        }
+
+        .launch-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #992200;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>IVAN STUDIO [+]</h1>
-        <p>Мои лучшие игры на JavaScript</p>
-    </header>
-    <div class="container">
-        <div class="card">
-            <span style="font-size: 50px;">🚀</span>
-            <h2>ПВО СИМУЛЯТОР</h2>
-            <p>Защита города: ясный день и звук тревоги.</p>
-            <a href="ССЫЛКА_НА_CODEPEN_1" target="_blank" class="btn">ИГРАТЬ</a>
-        </div>
-        <div class="card">
-            <span style="font-size: 50px;">⭐</span>
-            <h2>BRAWL CLICKER</h2>
-            <p>Твой крутой кликер с PvP батлами.</p>
-            <a href="ССЫЛКА_НА_CODEPEN_2" target="_blank" class="btn">ОТКРЫТЬ</a>
-        </div>
-        <div class="card">
-            <span style="font-size: 50px;">🏃</span>
-            <h2>DRONE RUNNER</h2>
-            <p>Убегай от дрона как можно дольше!</p>
-            <a href="ССЫЛКА_НА_CODEPEN_3" target="_blank" class="btn">БЕЖАТЬ</a>
-        </div>
+
+    <div class="hero-box">
+        <h1>ПВО СИМУЛЯТОР</h1>
+        <div class="status">[ СИСТЕМА АКТИВИРОВАНА ]</div>
+        
+        <p class="description">
+            Защити город от воздушной угрозы. Используй систему наведения, 
+            следи за радаром и уничтожай цели. <br>
+            <b>Версия: CodePen Edition.</b>
+        </p>
+
+        <a href="https://codepen.io/ofqyczkx-the-flexboxer/pen/myrKbeK" target="_blank" class="launch-btn">ЗАПУСТИТЬ СИСТЕМУ</a>
     </div>
-    <footer style="margin-top: 50px; color: #484f58;">&copy; 2026 Иван.</footer>
+
+    <footer>
+        РАЗРАБОТЧИК: ИВАН | 6 КЛАСС | 2026
+    </footer>
+
 </body>
 </html>
