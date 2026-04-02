@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>IVAN GAMES STUDIO</title>
+    <style>
+        body { margin: 0; background: #0d1117; color: white; font-family: sans-serif; text-align: center; }
+        header { padding: 50px; }
+        h1 { color: #58a6ff; font-size: 3rem; text-shadow: 0 0 20px #58a6ff; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 15px; width: 300px; padding: 20px; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: #58a6ff; }
+        .btn { display: inline-block; margin-top: 15px; padding: 10px 25px; background: #238636; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IVAN STUDIO [+]</h1>
+        <p>Мои лучшие игры на JavaScript</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <span style="font-size: 50px;">🚀</span>
+            <h2>ПВО СИМУЛЯТОР</h2>
+            <p>Защита города: ясный день и звук тревоги.</p>
+            <a href="ССЫЛКА_НА_CODEPEN_1" target="_blank" class="btn">ИГРАТЬ</a>
+        </div>
+        <div class="card">
+            <span style="font-size: 50px;">⭐</span>
+            <h2>BRAWL CLICKER</h2>
+            <p>Твой крутой кликер с PvP батлами.</p>
+            <a href="ССЫЛКА_НА_CODEPEN_2" target="_blank" class="btn">ОТКРЫТЬ</a>
+        </div>
+        <div class="card">
+            <span style="font-size: 50px;">🏃</span>
+            <h2>DRONE RUNNER</h2>
+            <p>Убегай от дрона как можно дольше!</p>
+            <a href="ССЫЛКА_НА_CODEPEN_3" target="_blank" class="btn">БЕЖАТЬ</a>
+        </div>
+    </div>
+    <footer style="margin-top: 50px; color: #484f58;">&copy; 2026 Иван.</footer>
+</body>
+</html>
